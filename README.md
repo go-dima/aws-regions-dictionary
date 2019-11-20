@@ -11,10 +11,10 @@ Usage Example:
 ```
 #!/bin/python
 
-from AwsRegionsDictionary import RegionsMapping
+from AwsRegionsDictionary.RegionsMapping import mapToRegionKey
 
-print(RegionsMapping.findRegion('Frankfurt'))
-print(RegionsMapping.findRegion('eu-central-1'))
+print(mapToRegionKey('Frankfurt'))
+print(mapToRegionKey('eu-central-1'))
 ```
 Output:
 ```

@@ -19,7 +19,7 @@ regions = {
     "sao paulo" : "sa-east-1"
 }
 
-def findRegion(regionStr):
+def mapToRegionKey(regionStr):
     regionStr_lower = regionStr.lower()
     if regionStr_lower in regions.values():
         return regionStr_lower
