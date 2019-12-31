@@ -1,5 +1,7 @@
 # aws-regions-dictionary
 
+[![Build Status](https://travis-ci.org/go-dima/aws-regions-dictionary.svg?branch=master)](https://travis-ci.org/go-dima/aws-regions-dictionary)
+
 Installation:
 
 ```

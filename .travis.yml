@@ -1,0 +1,7 @@
+language: python
+python:
+  - "3.6"
+cache: pip
+#install:
+script:
+  - python -m unittest AwsRegionsDictionary/*_tests.py -b
