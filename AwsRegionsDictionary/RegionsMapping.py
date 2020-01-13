@@ -1,7 +1,11 @@
 regions = {
     "n. virginia" : "us-east-1",
+    "north virginia" : "us-east-1",
+    "n.virginia" : "us-east-1",
     "ohio" : "us-east-2",
     "n. california" : "us-west-1",
+    "north california" : "us-west-1",
+    "n.california" : "us-west-1",
     "oregon" : "us-west-2",
     "hong kong" : "ap-east-1",
     "mumbai": "ap-south-1",

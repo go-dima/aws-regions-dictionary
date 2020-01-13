@@ -21,4 +21,16 @@ class AwsRegionDictTests(unittest.TestCase):
     def test_mapToRegionKey_unknownRegion_excention(self):
         self.assertRaises(KeyError, mapToRegionKey, 'Mars')
 
+    def test_mapToRegionKey_regionNameDotSplit_findKey(self):
+        foundRegion = mapToRegionKey('n.virginia')
+        self.assertEqual(foundRegion, 'us-east-1')
+
+    def test_mapToRegionKey_regionNameSpaceSplit_findKey(self):
+        foundRegion = mapToRegionKey('north virginia')
+        self.assertEqual(foundRegion, 'us-east-1')
+
+    def test_mapToRegionKey_regionNameDotSpaceSplit_findKey(self):
+        foundRegion = mapToRegionKey('n. virginia')
+        self.assertEqual(foundRegion, 'us-east-1')
+
 # Run: python -m unittest discover -s AwsRegionsDictionary -p "*_tests.py"
